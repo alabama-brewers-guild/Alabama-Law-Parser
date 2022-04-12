@@ -39,7 +39,7 @@ class AlisonParser(HTMLParser):
             self.in_body = True
         elif tag == 'h5':
             self.in_h5 = True
-        elif tag == '&' and self.in_h5 == true:
+        elif tag == '&' and self.in_h5 == True:
             self.body += '$'
         
     def handle_data(self, data):
